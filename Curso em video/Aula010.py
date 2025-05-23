@@ -1,5 +1,5 @@
 
-#Condições * if e else 
+#Condições * IF e ELSE 
 
 nome = str(input('Qual é seu nome?'))
 if nome == 'alexander':
