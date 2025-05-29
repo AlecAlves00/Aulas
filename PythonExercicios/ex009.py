@@ -1,5 +1,5 @@
 
-# Faça um programa que leia  um número inteiro qualquerr e mostre na tela a sua tabuada inteira.
+# Faça um programa que leia  um número inteiro qualquer e mostre na tela a sua tabuada inteira.
 
 p = int(input('Digite um número: '))
 print ('Sua tabuada : \n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}'.format(p*1,p*2,p*3,p*4,p*5,p*6,p*7,p*8,p*9,p*10)) 
