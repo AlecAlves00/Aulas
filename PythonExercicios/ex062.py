@@ -3,15 +3,12 @@ encerra quando ele disser que quer mostrar 0 termos."""
 
 razao = int(input('Digite a razão: '))
 num =  int(input('Digite o número: '))
-termo = int(input('Digite colocar mais termos: '))
+termo = int(input('Deseja colocar mais termos: '))
+
 while termo != 0:
-    contador = 0
-    if contador !
-    pa = num + termo * razao
-    print(f'{pa}')
-    
-    
-    termo = int(input('Deseja fazer mais alguns termos?\n [S] / [N]',
-termo.replace('S' or 'N' , '0' or '1').upper))
-    if termo == 1:
-        
+    contador = 1
+    while contador < termo:
+        pa = num + contador * razao
+        contador += 1
+        print(pa)
+    termo = int(input('Deseja colocar mais termos: '))

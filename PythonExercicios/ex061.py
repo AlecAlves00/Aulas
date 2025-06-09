@@ -12,7 +12,6 @@ num = int(input('Digite o número: '))
 razao = int(input('Digite a razao da PA: '))
 dezprimeiros = 0
 
-print(num)
 while dezprimeiros < 9:
     dezprimeiros += 1
     pa = num + dezprimeiros * razao
