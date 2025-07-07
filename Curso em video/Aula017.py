@@ -17,7 +17,7 @@ num.sort(reverse=True)
 print(num)
 
 #num.pop() remove o objeto da lista "se nao expecificar remove o ultimo"
-#num.append() ele adicona um valor ao final da lista ex: 4,5,6 .append(4) = 4,5,6,4
+#num.append() ele adicona um valor ao final da lista ex: 4,5,6 .append(2) = 4,5,4,6,
 
 valores = []
 valores.append(5)
