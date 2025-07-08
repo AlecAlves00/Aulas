@@ -1,22 +1,21 @@
 """
-Crie um programa que vai ler vários números e colocar em uma lista.
-Depois disso,crie duas listas externas que vão conter apenas os valores pares e os valores impares digitados,respectivamente.
-Ao final,mostre o conteúdo das três listas geradas.
+Crie um programa onde o usuário digite uma expressão qualquer que use parênteses.Seu aplicativo deverá
+analisar se a expressão passada está com os parenteses abertos e fechados na ordem correta.
 """
-valores = list()
-impar = list()
-par =  list()
-while True:
-    num = int(input('Digite os números que deseja [-1 para sair do programa!]: '))
-    if num == -1:
-        break
-    else:
-        valores.append(num)
-        if num % 2 == 0:
-            par.append(num)
-            par.sort()
+
+expressao = str(input('Digite a expressão: '))
+parenteses = list()
+for c in expressao:
+    if c == '(' :
+        parenteses.append(c)
+    elif c == ')' :
+        if len(parenteses) > 0:
+            parenteses.pop()
         else:
-            impar.append(num)
-            impar.sort()
-    valores.sort()
-print(f'As listas geradas são:\n{valores}\n{impar}\n{par}')
+            parenteses.append(c)
+            break
+if len(parenteses) == 0:
+    print('A expressão está correta!')
+else:
+    print('A expressão está incorreta!')
+    
