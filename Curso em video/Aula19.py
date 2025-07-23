@@ -1,5 +1,5 @@
 '''
-************DICIONARIO***********
+************DICIONÁRIOS***********
 '''
 #Mundo 3
 #Variáveis compostas
@@ -7,7 +7,7 @@
 
 dados = dict()
 dados = {'nome': 'Pedro', 'idade':25}
-print(dados[nome]) #resposta é Pedro
+print(dados["nome"]) #resposta é Pedro
 dados['sexo'] = 'M' # Criado e adicionado elemento no dicionario
 del dados['idade'] # Elimina o elemento da estrutura
 
@@ -40,7 +40,7 @@ pessoas['nome'] = 'Leandro' # Altera de Gustavo pra Leandro
 pessoas['peso'] = 98.5 # Adiciona novo item sem precisar de um append
 
 
-for k in pessoas.kesy():
+for k in pessoas.keys():
     print(k)
 
 
